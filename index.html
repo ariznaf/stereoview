@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>StereoView: Stereographic Projections of rock joints</title>
+        <link rel="stylesheet" href="main.css">
+
+    </head>
+    <body>
+        <header>
+            StereoView: Proyección estereográfica de planos y rectas
+        </header>
+        <div class="horMenu">
+            <ul>
+                <li>Home</li>
+                <li>Config</li>
+            </ul>
+        </div>
+        <div class="inputForm" id="inputData">
+            Dip:<input id="dip" min="0" max="90" type="text" value=90 onchange="onOrientationChanged()"/>
+            Dip Dir:<input id="dipDir" min="0" max="360" value= 0 type="text" onchange="onOrientationChanged()"/>
+        </div>
+        <div class="viewWindow" id="plotView">
+            <svg class="viewWindow" id="plotView" xmlns="http://www.w3.org/2000/svg" viewBox="-0.52 -0.52 1.04 1.04"  fill="none" stroke="white" stroke-width=".1%">
+            <g transform="rotate(90)">
+                <circle cx="0" cy="0" r=".5" />
+                <line x1="0" y1="0.5" x2="0" y2="0.52" />
+                <line x1="0" y1="-0.5" x2="0" y2="-0.52" />
+                <line y1="0" x1="0.5" y2="0" x2="0.52" />
+                <line y1="0" x1="-0.5" y2="0" x2="-0.52" />
+                
+
+                <g id="polo" transform="translate(0,0)" >
+                    <circle cx="0" cy="0" r=".0048" />
+                    <line x1="-0.005" x2="0.005" y1="0" y2="0" />
+                    <line x1="0" x2="0" y1="-0.005" y2="0.005" />
+                </g>
+            </g>
+            </svg>
+        </div>
+        <footer id="infoBar">
+            infoBar
+        </footer>
+        <script src="dist/main.js"></script>
+        <noscript>You need to enable JavaScript to view the full site.</noscript>
+    </body>
+</html>

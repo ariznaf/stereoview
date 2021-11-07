@@ -1,0 +1,39 @@
+body {
+    height:100%;
+    margin:0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+}
+ul {
+    margin: 0;
+}
+header {
+    font-size: xx-large;
+    text-align: center;
+    background-color: aqua;
+}
+div {
+    background-color: bisque;
+}
+.horMenu {
+    width:100%;
+}
+
+.inputForm {
+    float: left;
+    width: 10%;
+    height:100%;
+
+}
+.viewWindow {
+    float: left;
+    background-color: blue;
+    height: 100%;
+    width: 90%;
+}
+footer {
+    background-color: cornflowerblue;
+
+}
