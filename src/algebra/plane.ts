@@ -1,4 +1,4 @@
-import  * as Algebra from "./orientation";
+import  * as Algebra from "./orientation.js";
 export class Plane extends Algebra.Orientation {
     constructor(x:number=0 ,y:number=0,z:number=1) {
         super(x,y,z);

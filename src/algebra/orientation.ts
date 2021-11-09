@@ -1,4 +1,4 @@
-import * as Algebra from  "./vector3D";
+import * as Algebra from  "./vector3D.js";
 export class Orientation extends Algebra.Vector3D {
     constructor(x:number=0,y:number=0,z:number=1) {
         super(x,y,z);

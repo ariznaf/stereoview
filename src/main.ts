@@ -1,7 +1,6 @@
-import * as Algebra  from "./algebra/all";
-console.log("en main()");
-let joint= new Algebra.Plane(0,0,1);
-document.getElementById("inforBar")!.innerHTML= "en main";
+import * as Algebra  from "./algebra/index.js";
+console.log("en main.ts");
+var joint= new Algebra.Plane(0,0,1);
 
 function onOrientationChanged() {
     console.log("en onOrientationChanged");
@@ -13,3 +12,5 @@ function onOrientationChanged() {
     document.getElementById("infoBar")!.innerHTML= "<${joint.x},${joint.y},${joint.z}>";
 
 }
+(<HTMLInputElement>document.getElementById("dip")!).onchange= onOrientationChanged;
+(<HTMLInputElement>document.getElementById("dipDir")!).onchange= onOrientationChanged;
